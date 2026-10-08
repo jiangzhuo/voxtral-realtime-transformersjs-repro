@@ -1,0 +1,17 @@
+{
+  "name": "voxtral-realtime-transformersjs-repro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "transformers.js runs one Voxtral Realtime decoder step with no audio embedding after the chunk iterator ends, and streams its token",
+  "scripts": {
+    "repro": "node repro.mjs",
+    "repro:fix": "node repro.mjs --fix",
+    "repro:real": "node repro.mjs --real",
+    "repro:real:fix": "node repro.mjs --real --fix"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.1",
+    "onnxruntime-node": "1.30.0"
+  }
+}
